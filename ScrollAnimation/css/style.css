@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+*{
+	margin:0;
+	border:0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+  	outline:none;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	gap: 5px;
+}
+.container header, .container .iconScroll{
+	width:90%;
+	height: 40px;
+}
+.container header{
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Major Mono Display';
+	border-bottom:2px solid rgb(192, 192, 192);
+}
+
+.container .iconScroll{
+	border-top:2px solid rgb(192, 192, 192);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Major Mono Display';
+}
+.container .backGround{
+	width: 90%;
+	height: 90%;
+	background:url('../images/bg.jpg') no-repeat;
+	background-size:cover;
+	filter: blur(1px);
+}
+
+.container p{
+	margin-top: 20rem;
+	font-size: 6rem;
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+}
+.container img{
+	position:relative;
+	width: 90%;
+	transition: ease .3s;
+	/* transition: 0.4s cubic-bezier(.11,.78,.62,.98) */
+}
+.container .lastP{
+	margin-top: 0rem;
+	position:relative;
+
+}
+@media only screen and (max-width:800px){
+	.container p{
+		margin-top: 1rem;
+		font-size: 4rem;
+	}
+	.container img{
+		width: 90%;
+		height: 90%;
+		object-fit: cover;
+		
+	}
+}
